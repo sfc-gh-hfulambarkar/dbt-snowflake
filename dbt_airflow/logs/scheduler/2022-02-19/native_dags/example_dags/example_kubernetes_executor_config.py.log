@@ -698,3 +698,38 @@
 [2022-02-19 09:36:17,952] {logging_mixin.py:104} INFO - [2022-02-19 09:36:17,952] {dag.py:1833} INFO - Sync 1 DAGs
 [2022-02-19 09:36:17,977] {logging_mixin.py:104} INFO - [2022-02-19 09:36:17,977] {dag.py:2306} INFO - Setting next_dagrun for example_kubernetes_executor_config to None
 [2022-02-19 09:36:17,995] {scheduler_job.py:189} INFO - Processing /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.144 seconds
+[2022-02-19 09:50:22,463] {scheduler_job.py:181} INFO - Started process (PID=76) to work on /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:50:22,471] {scheduler_job.py:632} INFO - Processing file /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2022-02-19 09:50:22,489] {logging_mixin.py:104} INFO - [2022-02-19 09:50:22,489] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:50:22,529] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['example_kubernetes_executor_config']) retrieved from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:50:22,600] {logging_mixin.py:104} INFO - [2022-02-19 09:50:22,600] {dag.py:1833} INFO - Sync 1 DAGs
+[2022-02-19 09:50:22,641] {logging_mixin.py:104} INFO - [2022-02-19 09:50:22,640] {dag.py:2306} INFO - Setting next_dagrun for example_kubernetes_executor_config to None
+[2022-02-19 09:50:22,673] {scheduler_job.py:189} INFO - Processing /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.222 seconds
+[2022-02-19 09:50:53,425] {scheduler_job.py:181} INFO - Started process (PID=133) to work on /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:50:53,427] {scheduler_job.py:632} INFO - Processing file /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2022-02-19 09:50:53,429] {logging_mixin.py:104} INFO - [2022-02-19 09:50:53,429] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:50:53,452] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['example_kubernetes_executor_config']) retrieved from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:50:53,489] {logging_mixin.py:104} INFO - [2022-02-19 09:50:53,489] {dag.py:1833} INFO - Sync 1 DAGs
+[2022-02-19 09:50:53,514] {logging_mixin.py:104} INFO - [2022-02-19 09:50:53,514] {dag.py:2306} INFO - Setting next_dagrun for example_kubernetes_executor_config to None
+[2022-02-19 09:50:53,530] {scheduler_job.py:189} INFO - Processing /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.110 seconds
+[2022-02-19 09:51:24,318] {scheduler_job.py:181} INFO - Started process (PID=200) to work on /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:51:24,320] {scheduler_job.py:632} INFO - Processing file /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2022-02-19 09:51:24,322] {logging_mixin.py:104} INFO - [2022-02-19 09:51:24,322] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:51:24,340] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['example_kubernetes_executor_config']) retrieved from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:51:24,369] {logging_mixin.py:104} INFO - [2022-02-19 09:51:24,369] {dag.py:1833} INFO - Sync 1 DAGs
+[2022-02-19 09:51:24,387] {logging_mixin.py:104} INFO - [2022-02-19 09:51:24,387] {dag.py:2306} INFO - Setting next_dagrun for example_kubernetes_executor_config to None
+[2022-02-19 09:51:24,400] {scheduler_job.py:189} INFO - Processing /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.086 seconds
+[2022-02-19 09:51:54,506] {scheduler_job.py:181} INFO - Started process (PID=254) to work on /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:51:54,509] {scheduler_job.py:632} INFO - Processing file /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2022-02-19 09:51:54,510] {logging_mixin.py:104} INFO - [2022-02-19 09:51:54,510] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:51:54,528] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['example_kubernetes_executor_config']) retrieved from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:51:54,558] {logging_mixin.py:104} INFO - [2022-02-19 09:51:54,558] {dag.py:1833} INFO - Sync 1 DAGs
+[2022-02-19 09:51:54,577] {logging_mixin.py:104} INFO - [2022-02-19 09:51:54,577] {dag.py:2306} INFO - Setting next_dagrun for example_kubernetes_executor_config to None
+[2022-02-19 09:51:54,590] {scheduler_job.py:189} INFO - Processing /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.088 seconds
+[2022-02-19 09:52:25,360] {scheduler_job.py:181} INFO - Started process (PID=322) to work on /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:52:25,363] {scheduler_job.py:632} INFO - Processing file /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py for tasks to queue
+[2022-02-19 09:52:25,365] {logging_mixin.py:104} INFO - [2022-02-19 09:52:25,365] {dagbag.py:496} INFO - Filling up the DagBag from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:52:25,383] {scheduler_job.py:642} INFO - DAG(s) dict_keys(['example_kubernetes_executor_config']) retrieved from /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py
+[2022-02-19 09:52:25,423] {logging_mixin.py:104} INFO - [2022-02-19 09:52:25,423] {dag.py:1833} INFO - Sync 1 DAGs
+[2022-02-19 09:52:25,452] {logging_mixin.py:104} INFO - [2022-02-19 09:52:25,452] {dag.py:2306} INFO - Setting next_dagrun for example_kubernetes_executor_config to None
+[2022-02-19 09:52:25,467] {scheduler_job.py:189} INFO - Processing /home/airflow/.local/lib/python3.6/site-packages/airflow/example_dags/example_kubernetes_executor_config.py took 0.111 seconds
