@@ -1,0 +1,43 @@
+[2022-02-19 08:56:41,864] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once 2022-02-19T08:56:40.003675+00:00 [queued]>
+[2022-02-19 08:56:41,879] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once 2022-02-19T08:56:40.003675+00:00 [queued]>
+[2022-02-19 08:56:41,881] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-19 08:56:41,882] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2022-02-19 08:56:41,884] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-19 08:56:41,908] {taskinstance.py:1107} INFO - Executing <Task(BashOperator): load_seed_data_once> on 2022-02-19T08:56:40.003675+00:00
+[2022-02-19 08:56:41,914] {standard_task_runner.py:52} INFO - Started process 123 to run task
+[2022-02-19 08:56:41,924] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', '1_init_once_seed_data', 'load_seed_data_once', '2022-02-19T08:56:40.003675+00:00', '--job-id', '20', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/init.py', '--cfg-path', '/tmp/tmpcqo_f7so', '--error-file', '/tmp/tmp3wt7n7go']
+[2022-02-19 08:56:41,927] {standard_task_runner.py:77} INFO - Job 20: Subtask load_seed_data_once
+[2022-02-19 08:56:42,004] {logging_mixin.py:104} INFO - Running <TaskInstance: 1_init_once_seed_data.load_seed_data_once 2022-02-19T08:56:40.003675+00:00 [running]> on host 1dc390a15af1
+[2022-02-19 08:56:42,167] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=1_init_once_seed_data
+AIRFLOW_CTX_TASK_ID=load_seed_data_once
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-19T08:56:40.003675+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-19T08:56:40.003675+00:00
+[2022-02-19 08:56:42,171] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-19 08:56:42,174] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'cd /dbt && dbt seed --profiles-dir .']
+[2022-02-19 08:56:42,195] {subprocess.py:74} INFO - Output:
+[2022-02-19 08:56:44,877] {subprocess.py:78} INFO - Running with dbt=0.19.0
+[2022-02-19 08:56:44,897] {subprocess.py:78} INFO - Encountered an error while reading the project:
+[2022-02-19 08:56:44,899] {subprocess.py:78} INFO -   ERROR: Runtime Error
+[2022-02-19 08:56:44,900] {subprocess.py:78} INFO -   Could not find profile named 'default'
+[2022-02-19 08:56:44,912] {subprocess.py:78} INFO - Encountered an error:
+[2022-02-19 08:56:44,914] {subprocess.py:78} INFO - Runtime Error
+[2022-02-19 08:56:44,915] {subprocess.py:78} INFO -   Could not run dbt
+[2022-02-19 08:56:45,163] {subprocess.py:82} INFO - Command exited with return code 2
+[2022-02-19 08:56:45,188] {taskinstance.py:1501} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1157, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1331, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1361, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/bash.py", line 176, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-02-19 08:56:45,192] {taskinstance.py:1551} INFO - Marking task as FAILED. dag_id=1_init_once_seed_data, task_id=load_seed_data_once, execution_date=20220219T085640, start_date=20220219T085641, end_date=20220219T085645
+[2022-02-19 08:56:45,270] {local_task_job.py:149} INFO - Task exited with return code 1

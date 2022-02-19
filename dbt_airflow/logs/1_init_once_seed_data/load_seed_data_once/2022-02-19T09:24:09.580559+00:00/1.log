@@ -1,0 +1,66 @@
+[2022-02-19 09:24:11,141] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once 2022-02-19T09:24:09.580559+00:00 [queued]>
+[2022-02-19 09:24:11,168] {taskinstance.py:896} INFO - Dependencies all met for <TaskInstance: 1_init_once_seed_data.load_seed_data_once 2022-02-19T09:24:09.580559+00:00 [queued]>
+[2022-02-19 09:24:11,169] {taskinstance.py:1087} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-19 09:24:11,171] {taskinstance.py:1088} INFO - Starting attempt 1 of 1
+[2022-02-19 09:24:11,172] {taskinstance.py:1089} INFO - 
+--------------------------------------------------------------------------------
+[2022-02-19 09:24:11,185] {taskinstance.py:1107} INFO - Executing <Task(BashOperator): load_seed_data_once> on 2022-02-19T09:24:09.580559+00:00
+[2022-02-19 09:24:11,200] {standard_task_runner.py:76} INFO - Running: ['***', 'tasks', 'run', '1_init_once_seed_data', 'load_seed_data_once', '2022-02-19T09:24:09.580559+00:00', '--job-id', '26', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/init.py', '--cfg-path', '/tmp/tmp6z_06p6d', '--error-file', '/tmp/tmptmaxpje2']
+[2022-02-19 09:24:11,193] {standard_task_runner.py:52} INFO - Started process 123 to run task
+[2022-02-19 09:24:11,203] {standard_task_runner.py:77} INFO - Job 26: Subtask load_seed_data_once
+[2022-02-19 09:24:11,273] {logging_mixin.py:104} INFO - Running <TaskInstance: 1_init_once_seed_data.load_seed_data_once 2022-02-19T09:24:09.580559+00:00 [running]> on host 6f11a7de65ba
+[2022-02-19 09:24:11,412] {taskinstance.py:1302} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=1_init_once_seed_data
+AIRFLOW_CTX_TASK_ID=load_seed_data_once
+AIRFLOW_CTX_EXECUTION_DATE=2022-02-19T09:24:09.580559+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-02-19T09:24:09.580559+00:00
+[2022-02-19 09:24:11,415] {subprocess.py:52} INFO - Tmp dir root location: 
+ /tmp
+[2022-02-19 09:24:11,417] {subprocess.py:63} INFO - Running command: ['bash', '-c', 'cd /dbt && dbt seed --profiles-dir .']
+[2022-02-19 09:24:11,432] {subprocess.py:74} INFO - Output:
+[2022-02-19 09:24:13,505] {subprocess.py:78} INFO - Running with dbt=0.19.0
+[2022-02-19 09:24:19,538] {subprocess.py:78} INFO - [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+[2022-02-19 09:24:19,539] {subprocess.py:78} INFO - There are 2 unused configuration paths:
+[2022-02-19 09:24:19,540] {subprocess.py:78} INFO - - models.my_new_project.transform
+[2022-02-19 09:24:19,541] {subprocess.py:78} INFO - - models.my_new_project.analysis
+[2022-02-19 09:24:19,542] {subprocess.py:78} INFO - 
+[2022-02-19 09:24:19,701] {subprocess.py:78} INFO - Found 7 models, 4 tests, 0 snapshots, 0 analyses, 316 macros, 0 operations, 3 seed files, 0 sources, 0 exposures
+[2022-02-19 09:24:19,703] {subprocess.py:78} INFO - 
+[2022-02-19 09:24:23,212] {subprocess.py:78} INFO - 09:24:23 | Concurrency: 200 threads (target='dev')
+[2022-02-19 09:24:23,215] {subprocess.py:78} INFO - 09:24:23 |
+[2022-02-19 09:24:23,350] {subprocess.py:78} INFO - 09:24:23 | 3 of 3 START seed file public.customers.............................. [RUN]
+[2022-02-19 09:24:23,353] {subprocess.py:78} INFO - 09:24:23 | 2 of 3 START seed file public.bookings_2............................. [RUN]
+[2022-02-19 09:24:23,355] {subprocess.py:78} INFO - 09:24:23 | 1 of 3 START seed file public.bookings_1............................. [RUN]
+[2022-02-19 09:24:23,577] {subprocess.py:78} INFO - * Deprecation Warning: The quote_columns parameter was not set for seeds, so the
+[2022-02-19 09:24:23,580] {subprocess.py:78} INFO - default value of False was chosen. The default will change to True in a future
+[2022-02-19 09:24:23,581] {subprocess.py:78} INFO - release.
+[2022-02-19 09:24:23,584] {subprocess.py:78} INFO - 
+[2022-02-19 09:24:23,586] {subprocess.py:78} INFO - For more information, see:
+[2022-02-19 09:24:23,587] {subprocess.py:78} INFO - https://docs.getdbt.com/v0.15/docs/seeds#section-specify-column-quoting
+[2022-02-19 09:24:23,592] {subprocess.py:78} INFO - * Deprecation Warning: The quote_columns parameter was not set for seeds, so the
+[2022-02-19 09:24:23,597] {subprocess.py:78} INFO - default value of False was chosen. The default will change to True in a future
+[2022-02-19 09:24:23,600] {subprocess.py:78} INFO - release.
+[2022-02-19 09:24:23,607] {subprocess.py:78} INFO - 
+[2022-02-19 09:24:23,608] {subprocess.py:78} INFO - For more information, see:
+[2022-02-19 09:24:23,610] {subprocess.py:78} INFO - https://docs.getdbt.com/v0.15/docs/seeds#section-specify-column-quoting
+[2022-02-19 09:24:23,613] {subprocess.py:78} INFO - * Deprecation Warning: The quote_columns parameter was not set for seeds, so the
+[2022-02-19 09:24:23,614] {subprocess.py:78} INFO - default value of False was chosen. The default will change to True in a future
+[2022-02-19 09:24:23,615] {subprocess.py:78} INFO - release.
+[2022-02-19 09:24:23,617] {subprocess.py:78} INFO - 
+[2022-02-19 09:24:23,618] {subprocess.py:78} INFO - For more information, see:
+[2022-02-19 09:24:23,619] {subprocess.py:78} INFO - https://docs.getdbt.com/v0.15/docs/seeds#section-specify-column-quoting
+[2022-02-19 09:24:27,342] {subprocess.py:78} INFO - 09:24:27 | 1 of 3 OK loaded seed file public.bookings_1......................... [[32mINSERT 7[0m in 3.98s]
+[2022-02-19 09:24:27,457] {subprocess.py:78} INFO - 09:24:27 | 3 of 3 OK loaded seed file public.customers.......................... [[32mINSERT 2[0m in 4.10s]
+[2022-02-19 09:24:27,573] {subprocess.py:78} INFO - 09:24:27 | 2 of 3 OK loaded seed file public.bookings_2......................... [[32mINSERT 7[0m in 4.21s]
+[2022-02-19 09:24:28,706] {subprocess.py:78} INFO - 09:24:28 |
+[2022-02-19 09:24:28,708] {subprocess.py:78} INFO - 09:24:28 | Finished running 3 seeds in 9.00s.
+[2022-02-19 09:24:28,922] {subprocess.py:78} INFO - 
+[2022-02-19 09:24:28,926] {subprocess.py:78} INFO - [32mCompleted successfully[0m
+[2022-02-19 09:24:28,930] {subprocess.py:78} INFO - 
+[2022-02-19 09:24:28,933] {subprocess.py:78} INFO - Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[2022-02-19 09:24:29,894] {subprocess.py:82} INFO - Command exited with return code 0
+[2022-02-19 09:24:29,931] {taskinstance.py:1211} INFO - Marking task as SUCCESS. dag_id=1_init_once_seed_data, task_id=load_seed_data_once, execution_date=20220219T092409, start_date=20220219T092411, end_date=20220219T092429
+[2022-02-19 09:24:29,964] {taskinstance.py:1265} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-02-19 09:24:30,015] {local_task_job.py:149} INFO - Task exited with return code 0
